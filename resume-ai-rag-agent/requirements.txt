@@ -1,0 +1,13 @@
+streamlit
+pypdf2
+pymupdf
+sentence-transformers
+faiss-cpu
+huggingface_hub
+langchain
+python-dotenv
+numpy
+pandas
+openai>=1.50.0
+tiktoken
+python-dotenv
