@@ -99,6 +99,31 @@ Computes ATS compatibility using semantic & keyword overlap.
 
 Download rewritten bullets, cover letters, or full tailored résumé text.
 
+### Flow Chart
+
+A[Upload Resume PDF] --> B[Extract Text<br>(parse_pdf.py)]
+B --> C[Clean Text<br>(clean_text.py)]
+C --> D[Chunk Text<br>(chunk_text.py)]
+D --> E[Generate Embeddings<br>(embeddings.py)]
+E --> F[FAISS Vector Index<br>(rag_engine.py)]
+F --> G[RAG Retrieval<br>(Top Resume Chunks)]
+
+G --> H[GPT-4o-mini Q&A<br>(answer_question_with_openai)]
+G --> I[Bullet Rewriter (STAR)<br>(Multi-Agent)]
+G --> J[JD Tailoring<br>(RAG + Agent)]
+G --> K[Skill Gap Analyzer]
+G --> L[Cover Letter Generator]
+
+J --> M[ATS Scoring<br>(ats_scoring.py)]
+
+H --> Z[Streamlit UI]
+I --> Z
+J --> Z
+K --> Z
+L --> Z
+M --> Z
+
+
 ## 🔧 Installation & Setup
 1️⃣ Clone the Repository
 git clone https://github.com/Deekshareddy10/Resume-AI-Assistant.git
