@@ -101,19 +101,18 @@ Download rewritten bullets, cover letters, or full tailored résumé text.
 
 ## 🏗️ Project Architecture
 
-
 Resume-AI-Assistant/
 │
-├── app.py                        # Main Streamlit application
-├── requirements.txt              # Package dependencies
+├── app.py                     # Main Streamlit application
+├── requirements.txt           # Package dependencies
 │
 ├── utils/
-│   ├── parse_pdf.py              # PDF → text extraction
-│   ├── clean_text.py             # Text cleaning
-│   ├── chunk_text.py             # Text chunking for RAG
-│   ├── embeddings.py             # Embedding generation
-│   ├── ats_scoring.py            # ATS scoring logic
-│   ├── rag_engine.py             # FAISS index builder + semantic search
+│   ├── parse_pdf.py           # PDF → text extraction
+│   ├── clean_text.py          # Text cleaning
+│   ├── chunk_text.py          # Text chunking for RAG
+│   ├── embeddings.py          # Embedding generation
+│   ├── ats_scoring.py         # ATS scoring logic
+│   ├── rag_engine.py          # FAISS index builder + semantic search
 │   └── __init__.py
 │
 └── README.md
