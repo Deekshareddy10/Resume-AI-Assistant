@@ -99,7 +99,9 @@ Computes ATS compatibility using semantic & keyword overlap.
 
 Download rewritten bullets, cover letters, or full tailored résumé text.
 
-🏗️ Project Architecture
+## 🏗️ Project Architecture
+
+
 Resume-AI-Assistant/
 │
 ├── app.py                        # Main Streamlit application
